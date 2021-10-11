@@ -95,3 +95,5 @@ C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pag
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sugerencias\index1.cshtml.g.cs
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Galpones\AddVeterinarios.cshtml.g.cs
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Galpones\AddOperarios.cshtml.g.cs
+C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ambientes\Details1.cshtml.g.cs
+C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sugerencias\Details1.cshtml.g.cs

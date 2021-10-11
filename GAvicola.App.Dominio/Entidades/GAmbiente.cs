@@ -16,7 +16,7 @@ namespace GAvicola.App.Dominio
 
         // Llave Foranea del Operario para relacionar con el Galpon - 3/Sept/2021
         //public int IdOperario {get;set;}
-        public Galpon Operario{get;set;}
+        public Operario Operario{get;set;}
 
         public double Temperatura {get;set;}
         public double Agua {get;set;}

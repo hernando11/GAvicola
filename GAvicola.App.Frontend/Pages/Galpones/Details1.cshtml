@@ -32,16 +32,19 @@
         <th scope="col">Latitud</th>
         <td>@Model.galpon.Latitud</td>
     </tr>
-    
+    <!--
+        Fecha 11 Octubre 2021 - Se quito el simbolo ARROBA anes de "Model"
     <tr>
         <th scope="col">Veterinario Id</th>
-        <td>@Model.galpon.Veterinario</td>
+        <td>Model.galpon.Veterinario</td>
     </tr>
     <tr>
         <th scope="col">Operario Id</th>
-        <td>@Model.galpon.Operario</td>
+        <td>Model.galpon.Operario</td>
     </tr>
     <tr>
+-->
+
     <!-- Falta antes de hacer esto, buscar si existe el
     -->
         <th scope="col">Veterinario</th>
@@ -50,8 +53,10 @@
             <th> 
                 <a class= "btn btn-secondary" asp-page="./AddVeterinarios" asp-route-id="@Model.galpon.Id">Asignar Veterinario2</a>
             </th>
+            <!--
             <th>Nombre</th>
-            <td>@Model.galpon.Veterinario</td>
+            <td>Model.galpon.Veterinario</td>
+            -->
         }
         else
         {

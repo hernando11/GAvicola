@@ -1,0 +1,88 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Ambientes.Details1Model
+@{
+}
+<h1>Detalle Variables de Ambiente</h1>
+<table class="table table-stried">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.gambiente.Id</td>
+    </tr>
+    <tr>
+        <th scope="col">Temperatura - °C</th>
+        <td>@Model.gambiente.Temperatura</td>
+    </tr>
+    <tr>
+        <th scope="col">Agua - litros</th>
+        <td>@Model.gambiente.Agua</td>
+    </tr>
+    <tr>
+        <th scope="col">Alimento - Kg</th>
+        <td>@Model.gambiente.Alimento</td>
+    </tr>
+    <tr>
+        <th scope="col">Huevos</th>
+        <td>@Model.gambiente.Huevos</td>
+    </tr>
+    <tr>
+        <th scope="col">Animales enfermos</th>
+        <td>@Model.gambiente.Enfermas</td>
+    </tr>
+    <tr>
+        <th scope="col">Fecha</th>
+        <td>@Model.gambiente.Fecha</td>
+    </tr>
+    <!--
+        Se quito el simbolo ARROBA anes de "Model"
+    <tr>
+        <th scope="col">Veterinario Id</th>
+        <td>Model.galpon.Veterinario</td>
+    </tr>
+    <tr>
+        <th scope="col">Operario Id</th>
+        <td>Model.galpon.Operario</td>
+    </tr>
+    <tr>
+-->
+
+    <!-- Falta antes de hacer esto, buscar si existe el
+    -->
+    
+        <th scope="col">Galpon</th>
+        @if (Model.gambiente.Galpon == null)
+        {
+            <th> 
+                <a class= "btn btn-secondary" asp-page="./AddGalpones" asp-route-id="@Model.gambiente.Id">Asignar Galpon 2</a>
+            </th>
+            <!--
+            <th>Nombre</th>
+            <td>Model.galpon.Veterinario</td>
+            -->
+        }
+        else
+        {
+            <!-- Quite el ARROBA anes de "Model"-->
+            <td>@Model.gambiente.Galpon.Nombre</td>
+        }
+    </tr>
+    <tr>
+
+        <th scope="col">Operario</th>
+        @if (Model.gambiente.Operario == null)
+        {
+             <th>              
+                <a class= "btn btn-secondary" asp-page="./AddOperarios" asp-route-id="@Model.gambiente.Id">Asignar Operario 2</a>
+            </th>
+        }
+        else
+        {
+            <!-- Quite el ARROBA anes de "Model"-->
+            <td>@Model.gambiente.Operario.Nombre</td>
+        }
+
+
+    </tr>
+    
+
+</table>
+<a class="btn btn-secondary" asp-page="./index1">Volver</a>

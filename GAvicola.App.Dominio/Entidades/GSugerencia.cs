@@ -12,7 +12,7 @@ namespace GAvicola.App.Dominio
 
         // Llave Foranea del Operario para relacionar con el Galpon - 3/Sept/2021
         //public int IdVeterinario {get;set;}
-        public Persona Veterinario{get;set;}
+        public Veterinario Veterinario{get;set;}
 
         public string Diagnostico {get;set;}
         public string Sugenrecia {get;set;}
