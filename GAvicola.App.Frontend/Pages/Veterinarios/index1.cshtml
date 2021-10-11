@@ -1,0 +1,33 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Veterinarios.index1Model
+@{
+}
+<h1>Listado Veterinarios</h1>
+<a class="btn btn-primary" asp-page="./Create1">Crear Veterinario</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Correo</th>
+            <th colspan="2" scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var veterinario in Model.veterinarios)
+    {
+        <tr>
+            <td>@veterinario.Nombre</td>
+            <td>@veterinario.Documento</td>
+            <td>@veterinario.Telefono</td>
+            <td>@veterinario.Direccion</td>
+            <td>@veterinario.Correo</td>
+            <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@veterinario.Id">Detalle</a></td>
+            <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@veterinario.Id">Editar</a></td>
+        </tr>
+    }
+
+</table>

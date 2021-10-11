@@ -1,0 +1,33 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Operarios.index1Model
+@{
+}
+<h1>Listado Operarios</h1>
+<a class="btn btn-primary" asp-page="./Create1">Crear Operario</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Correo</th>
+            <th colspan="2" scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var operario in Model.operarios)
+    {
+        <tr>
+            <td>@operario.Nombre</td>
+            <td>@operario.Documento</td>
+            <td>@operario.Telefono</td>
+            <td>@operario.Direccion</td>
+            <td>@operario.Correo</td>
+            <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@operario.Id">Detalle</a></td>
+            <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@operario.Id">Editar</a></td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,80 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Galpones.Details1Model
+@{
+}
+<h1>Detalle Galpon</h1>
+<table class="table table-stried">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.galpon.Id</td>
+    </tr>
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.galpon.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Numero aves</th>
+        <td>@Model.galpon.NumAves</td>
+    </tr>
+    <tr>
+        <th scope="col">Fecha ingreso</th>
+        <td>@Model.galpon.FechaIngreso</td>
+    </tr>
+    <tr>
+        <th scope="col">Fecha egreso</th>
+        <td>@Model.galpon.FechaEgreso</td>
+    </tr>
+    <tr>
+        <th scope="col">Longitud</th>
+        <td>@Model.galpon.Longitud</td>
+    </tr>
+    <tr>
+        <th scope="col">Latitud</th>
+        <td>@Model.galpon.Latitud</td>
+    </tr>
+    
+    <tr>
+        <th scope="col">Veterinario Id</th>
+        <td>@Model.galpon.Veterinario</td>
+    </tr>
+    <tr>
+        <th scope="col">Operario Id</th>
+        <td>@Model.galpon.Operario</td>
+    </tr>
+    <tr>
+    <!-- Falta antes de hacer esto, buscar si existe el
+    -->
+        <th scope="col">Veterinario</th>
+        @if (Model.galpon.Veterinario == null)
+        {
+            <th> 
+                <a class= "btn btn-secondary" asp-page="./AddVeterinarios" asp-route-id="@Model.galpon.Id">Asignar Veterinario2</a>
+            </th>
+            <th>Nombre</th>
+            <td>@Model.galpon.Veterinario</td>
+        }
+        else
+        {
+            <td>@Model.galpon.Veterinario.Nombre</td>
+        }
+    </tr>
+    <tr>
+
+        <th scope="col">Operario</th>
+        @if (Model.galpon.Operario == null)
+        {
+             <th>              
+                <a class= "btn btn-secondary" asp-page="./AddOperarios" asp-route-id="@Model.galpon.Id">Asignar Operario 2</a>
+            </th>
+        }
+        else
+        {
+            <td>@Model.galpon.Operario.Nombre</td>
+        }
+
+
+    </tr>
+    
+
+</table>
+<a class="btn btn-secondary" asp-page="./index1">Volver</a>

@@ -1,0 +1,54 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Veterinarios.Details1Model
+@{
+}
+<h1>Detalle Veterinario</h1>
+<table class="table table-stried">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.veterinario.Id</td>
+    </tr>
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.veterinario.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Doc Identidad</th>
+        <td>@Model.veterinario.Documento</td>
+    </tr>
+    <tr>
+        <th scope="col">Usuario</th>
+        <td>@Model.veterinario.Usuario</td>
+    </tr>
+    <tr>
+        <th scope="col">Contraseña</th>
+        <td>@Model.veterinario.Clave</td>
+    </tr>
+    <tr>
+        <th scope="col">Telefono</th>
+        <td>@Model.veterinario.Telefono</td>
+    </tr>
+    <tr>
+        <th scope="col">Direccion Residencia</th>
+        <td>@Model.veterinario.Direccion</td>
+    </tr>
+    <tr>
+        <th scope="col">Correo</th>
+        <td>@Model.veterinario.Correo</td>
+    </tr>
+
+    <!-- /*
+    <tr>
+        <th scope="col">Veterinario Id</th>
+        Falta el ARROBA antes de la palabra "Model"
+        <td>Model.galpon.Veterinario</td> 
+    </tr>
+    <tr>
+        <th scope="col">Operario Id</th>
+        Falta el ARROBA antes de la palabra "Model"
+        <td>Model.galpon.Operario</td>
+    </tr>
+    */ -->
+
+</table>
+<a class="btn btn-secondary" asp-page="./index1">Volver</a>

@@ -1,0 +1,28 @@
+using System;
+namespace GAvicola.App.Dominio
+{
+    public class Persona
+    {
+        public int Id {get;set;}
+        //public int IdPersona {get;set;}
+
+        public int IdRol {get;set;}
+        //public Rol IdRol{get;set;}
+        public string Usuario {get;set;}
+        public string Clave {get;set;}
+        public string Nombre {get;set;}
+        public int Documento {get;set;}
+        public string Telefono {get; set;}
+        public string Direccion {get;set;}
+        public string Correo {get;set;}
+        public int IdVeterinario{get; set;}
+        //public Persona IdVeterinario{get;set;}
+        public int IdOperario {get;set;}
+        //public Persona IdOperario{get;set;}
+        public int IdAuxiliar {get;set;}
+        //public Persona IdAuxiliar{get;set;}
+        public string Tipo {get;set;}
+        public int Activo {get;set;}
+
+    }
+}

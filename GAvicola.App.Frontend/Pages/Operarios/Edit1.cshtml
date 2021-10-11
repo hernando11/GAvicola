@@ -1,0 +1,53 @@
+﻿@page
+@using GAvicola.App.Dominio
+@model GAvicola.App.Frontend.Pages.Operarios.Edit1Model
+@{
+}
+<h1>Editar Operario</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="operario.Id"></label>
+        <input asp-for="operario.Id" class="form-control" readonly>
+        <span asp-validation-for="operario.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Nombre"></label>
+        <input asp-for="operario.Nombre" class="form-control">
+        <span asp-validation-for="operario.Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Documento"></label>
+        <input asp-for="operario.Documento" class="form-control">
+        <span asp-validation-for="operario.Documento" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Usuario"></label>
+        <input asp-for="operario.Usuario" class="form-control">
+        <span asp-validation-for="operario.Usuario" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Clave"></label>
+        <input asp-for="operario.Clave" class="form-control">
+        <span asp-validation-for="operario.Clave" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Telefono"></label>
+        <input asp-for="operario.Telefono" class="form-control">
+        <span asp-validation-for="operario.Telefono" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Direccion"></label>
+        <input asp-for="operario.Direccion" class="form-control">
+        <span asp-validation-for="operario.Direccion" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="operario.Correo"></label>
+        <input asp-for="operario.Correo" class="form-control">
+        <span asp-validation-for="operario.Correo" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Modificar Operario</button>
+
+
+
+</form>
+<A class="btn btn-secondary" asp-page="./index1">Volver</a>

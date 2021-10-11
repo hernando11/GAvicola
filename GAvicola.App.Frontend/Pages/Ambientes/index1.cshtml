@@ -1,0 +1,37 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Ambientes.index1Model
+@{
+}
+<h1>Listado Variables de Ambiente</h1>
+<a class="btn btn-primary" asp-page="./Create1">Crear Variables</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Temperatura °C</th>
+            <th scope="col">Agua Lt</th>
+            <th scope="col">Alimento Kg</th>
+            <th scope="col">Huevos</th>
+            <th scope="col">Enfermas</th>
+            <th scope="col">Fecha</th>
+            <th colspan="2" scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var gambiente in Model.gambientes)
+        {
+            <tr>
+                <td>@gambiente.Temperatura</td>
+                <td>@gambiente.Agua</td>
+                <td>@gambiente.Alimento</td>
+                <td>@gambiente.Huevos</td>
+                <td>@gambiente.Enfermas</td>
+                <td>@gambiente.Fecha</td>
+                <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@gambiente.Id">Detalle</a></td>
+                <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@gambiente.Id">Editar</a></td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

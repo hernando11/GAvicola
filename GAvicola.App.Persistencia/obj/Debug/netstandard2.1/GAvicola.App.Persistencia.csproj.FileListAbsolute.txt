@@ -1,0 +1,12 @@
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\bin\Debug\netstandard2.1\GAvicola.App.Persistencia.deps.json
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\bin\Debug\netstandard2.1\GAvicola.App.Persistencia.dll
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\bin\Debug\netstandard2.1\GAvicola.App.Persistencia.pdb
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\bin\Debug\netstandard2.1\GAvicola.App.Dominio.dll
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\bin\Debug\netstandard2.1\GAvicola.App.Dominio.pdb
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.csprojAssemblyReference.cache
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.AssemblyInfoInputs.cache
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.AssemblyInfo.cs
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.csproj.CopyComplete
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.dll
+C:\GAvicola\GAvicola.App\GAvicola.App.Persistencia\obj\Debug\netstandard2.1\GAvicola.App.Persistencia.pdb
