@@ -1,4 +1,6 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace GAvicola.App.Dominio
 {
     public class Persona
@@ -10,10 +12,13 @@ namespace GAvicola.App.Dominio
         //public Rol IdRol{get;set;}
         public string Usuario {get;set;}
         public string Clave {get;set;}
+        [Required]
+        [StringLength(50,MinimumLength=2, ErrorMessage="Campo obligatorio, logitud mínima 2 y maxima 50")]
         public string Nombre {get;set;}
         public int Documento {get;set;}
         public string Telefono {get; set;}
         public string Direccion {get;set;}
+        [DataType(DataType.EmailAddress)]
         public string Correo {get;set;}
         public int IdVeterinario{get; set;}
         //public Persona IdVeterinario{get;set;}

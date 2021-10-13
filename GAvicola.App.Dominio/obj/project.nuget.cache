@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CcxscGura1ycGuUXRdMUlEssVKgM9mS8LektZb5mF+/9tabUkdIUHrgQgemUKHeSDQpywtfkME+1KPqPvF3Cqg==",
+  "dgSpecHash": "bgzo5rup9PWLISICTjsW6B4vLl2Yxu1oJodtqWmqi9fQPnAYm/pe/aisAHVhtNjqqkRr/jDgLM7joUSDL1ii2A==",
   "success": true,
   "projectFilePath": "C:\\GAvicola\\GAvicola.App\\GAvicola.App.Dominio\\GAvicola.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\nando\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\nando\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\nando\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -11,6 +11,7 @@ namespace GAvicola.App.Frontend.Pages.Galpones
 {
     public class AddOperariosModel : PageModel
     {
+        // Los campos _repoGalpom y _repoOperario  viene del "Appcontext"
         private readonly IRepositorioGalpon _repoGalpon;
         private readonly IRepositorioOperario _repoOperario;
 
@@ -24,6 +25,7 @@ namespace GAvicola.App.Frontend.Pages.Galpones
         }
 
 
+        // Esto se ejecuta cuando el ingresa a "AddOperario.cshtml"
         public void OnGet(int id)
         {
             galpon=_repoGalpon.GetGalpon(id);

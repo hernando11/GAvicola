@@ -11,6 +11,9 @@ namespace GAvicola.App.Frontend.Pages.Operarios
 {
     public class Create1Model : PageModel
     {
+        // Fecha 12 Octubre 2021 - Explicacion
+        // Con esto traemos la Interface "IrepositoropOperario"
+        // y traemos el objeto de la clase Operario
         private readonly IRepositorioOperario _repoOperario;
 
         public Operario operario { get; set; }
@@ -24,6 +27,9 @@ namespace GAvicola.App.Frontend.Pages.Operarios
         {
             if (ModelState.IsValid)
             {
+                // Fecha 12 Octubre 2021 - Explicacion
+                // Esto viene de la "Persistencia" del "Repositorio"
+                // "RepositorioOperario", alli esta e Metodo "AddOperario"
                 _repoOperario.AddOperario(operario);
                 return RedirectToPage("Index1");
             }
@@ -33,7 +39,11 @@ namespace GAvicola.App.Frontend.Pages.Operarios
             }
         }
 
-
+        // Fecha 12 Octubre 2021 - Explicacion
+        // No lleva parametros, porque lo que necesitamos es 
+        // que nos traiga la toda la informacion del Operario
+        // que se Caragara en el Formulario de la PANTALLA.
+        // es decir, que e Usuario Digitará.
         public void OnGet()
         {
             operario = new Operario();

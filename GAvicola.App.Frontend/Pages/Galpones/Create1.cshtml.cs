@@ -11,12 +11,18 @@ namespace GAvicola.App.Frontend.Pages.Galpones
 {
     public class Create1Model : PageModel
     {
+        // Fecha 12 Octubre 2021 - Explicacion
+        // Con esto traemos la Interface "IrepositoropGalpon"
+        // y traemos el objeto de la clase Galpon
         private readonly IRepositorioGalpon _repoGalpon;
 
         public Galpon galpon { get; set; }
 
         public Create1Model(IRepositorioGalpon repoGalpon)
         {
+            // Fecha 12 Octubre 2021 - Explicacion
+            // Con el guion bejo"_" lo identificamos como el 
+            // AppContext para poder utilizar.
             _repoGalpon=repoGalpon;
         }
 

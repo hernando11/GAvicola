@@ -11,6 +11,9 @@ namespace GAvicola.App.Frontend.Pages.Galpones
 {
     public class AddVeterinariosModel : PageModel
     {
+        // Fecha 12 Octubre 2021 - Explicacion
+        // Con esto traemos la Interface "IrepositoropGalpon"
+        // y traemos el objeto de la clase Galpon
         private readonly IRepositorioGalpon _repoGalpon;
         private readonly IRepositorioVeterinario _repoVeterinario;
 
@@ -19,6 +22,9 @@ namespace GAvicola.App.Frontend.Pages.Galpones
 
         public AddVeterinariosModel(IRepositorioGalpon repoGalpon, IRepositorioVeterinario repoVeterinario)
         {
+            // Fecha 12 Octubre 2021 - Explicacion
+            // Con el guion bejo"_" lo identificamos como el 
+            // AppContext para poder utilizar.
             _repoGalpon=repoGalpon;
             _repoVeterinario=repoVeterinario;
         }
