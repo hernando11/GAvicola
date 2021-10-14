@@ -12,8 +12,8 @@ namespace GAvicola.App.Frontend.Pages.Operarios
     public class Create1Model : PageModel
     {
         // Fecha 12 Octubre 2021 - Explicacion
-        // Con esto traemos la Interface "IrepositoropOperario"
-        // y traemos el objeto de la clase Operario
+        // Con esto traemos del "AppContext" la Interface "IrepositoropOperario"
+        // y traemos el objeto "_repoOperario" de la clase Operario
         private readonly IRepositorioOperario _repoOperario;
 
         public Operario operario { get; set; }

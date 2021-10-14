@@ -13,7 +13,7 @@ namespace GAvicola.App.Persistencia
         GAmbiente GetGAmbiente(int idAmbiente);
         // Comentariado 07 Sept 2021
         //Veterinario AsignarVeterinario(int IdGalpon, int IdVeterinario);
-        //Operario AsignarOperario(int IdGalpon, int IdOperario);
+        Operario AsignarOperario(int IdGalpon, int IdOperario);
 
     }
 }

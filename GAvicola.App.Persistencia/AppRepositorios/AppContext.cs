@@ -18,6 +18,8 @@ namespace GAvicola.App.Persistencia
         public DbSet<Veterinario> Veterinarios{get;set;}
         public DbSet<Operario> Operarios{get;set;}
         public DbSet<Auxiliar> Auxiliares{get;set;}
+        public DbSet<Sugerencia> Sugerencias{get;set;}
+        public DbSet<Diagnostico> Diagnosticos{get;set;}
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

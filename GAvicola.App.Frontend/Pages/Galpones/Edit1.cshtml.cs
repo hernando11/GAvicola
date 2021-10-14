@@ -37,8 +37,15 @@ namespace GAvicola.App.Frontend.Pages.Galpones
         }
         public IActionResult OnPost(Galpon galpon)
         {
-           _repoGalpon.UpdateGalpon(galpon);
-            return RedirectToPage("index1");
+            if (ModelState.IsValid)
+            {
+                _repoGalpon.UpdateGalpon(galpon);
+                return RedirectToPage("Index1");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

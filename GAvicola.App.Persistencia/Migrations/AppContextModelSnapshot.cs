@@ -72,7 +72,11 @@ namespace GAvicola.App.Persistencia.Migrations
                     b.Property<int>("Activo")
                         .HasColumnType("int");
 
-                    b.Property<string>("Diagnostico")
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Fecha")
@@ -81,14 +85,8 @@ namespace GAvicola.App.Persistencia.Migrations
                     b.Property<int?>("GalponId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Sugenrecia")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int?>("VeterinarioId")
                         .HasColumnType("int");
-
-                    b.Property<string>("tipo")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -97,6 +95,8 @@ namespace GAvicola.App.Persistencia.Migrations
                     b.HasIndex("VeterinarioId");
 
                     b.ToTable("GSugerencias");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("GSugerencia");
                 });
 
             modelBuilder.Entity("GAvicola.App.Dominio.Galpon", b =>
@@ -122,7 +122,9 @@ namespace GAvicola.App.Persistencia.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("NumAves")
                         .HasColumnType("int");
@@ -202,7 +204,9 @@ namespace GAvicola.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
@@ -248,6 +252,26 @@ namespace GAvicola.App.Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("GAvicola.App.Dominio.Diagnostico", b =>
+                {
+                    b.HasBaseType("GAvicola.App.Dominio.GSugerencia");
+
+                    b.Property<DateTime>("FechaInicialD")
+                        .HasColumnType("datetime2");
+
+                    b.HasDiscriminator().HasValue("Diagnostico");
+                });
+
+            modelBuilder.Entity("GAvicola.App.Dominio.Sugerencia", b =>
+                {
+                    b.HasBaseType("GAvicola.App.Dominio.GSugerencia");
+
+                    b.Property<DateTime>("FechaInicialS")
+                        .HasColumnType("datetime2");
+
+                    b.HasDiscriminator().HasValue("Sugerencia");
                 });
 
             modelBuilder.Entity("GAvicola.App.Dominio.Auxiliar", b =>

@@ -1078,6 +1078,9 @@
         }
       },
       "GAvicola.App.Dominio/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "runtime": {
           "GAvicola.App.Dominio.dll": {}
         }
@@ -1086,7 +1089,8 @@
         "dependencies": {
           "GAvicola.App.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
+          "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
           "GAvicola.App.Persistencia.dll": {}

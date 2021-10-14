@@ -103,17 +103,17 @@ namespace GAvicola.App.Persistencia
 
         // ASIGNA un Operario a un Galpon
         // 07 Septiembre 2021
-        /*
-        Operario IRepositorioGalpon.AsignarOperario(int IdGalpon, int IdOperario)
+        
+        Operario IRepositorioGAmbiente.AsignarOperario(int IdAmbiente, int IdOperario)
         {
-            var galponEncontrado = _appContext.Galpones.Find(IdGalpon);
-            if ( galponEncontrado != null)
+            var gambienteEncontrado = _appContext.GAmbientes.Find(IdAmbiente);
+            if ( gambienteEncontrado != null)
             {
                 var operarioEncontrado = _appContext.Operarios.Find(IdOperario);
                 if ( operarioEncontrado != null)
                 {
                     //galponEncontrado.VeterinarioId = veterinarioEncontrado;
-                    galponEncontrado.Operario = operarioEncontrado; //IdVeterinario;
+                    gambienteEncontrado.Operario = operarioEncontrado; //IdVeterinario;
                     _appContext.SaveChanges();
                 }
                 return operarioEncontrado;
@@ -121,7 +121,7 @@ namespace GAvicola.App.Persistencia
             // Yo colo que sto para solucionar un error 06 Sept 2021
             return null;
         }
-        */
+        
         
 
 

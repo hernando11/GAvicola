@@ -1,0 +1,30 @@
+﻿@page
+@model GAvicola.App.Frontend.Pages.Diagnosticos.index1Model
+@{
+}
+<h1>Listado Diagnosticos</h1>
+<a class="btn btn-primary" asp-page="./Create1">Crear Diagnostico</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Diagnostico</th>
+            <th scope="col">Fecha Diagnostico</th>
+
+            <th colspan="2" scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var diagnostico in Model.diagnosticos)
+        {
+            <tr>
+                <td>@diagnostico.Descripcion</td>
+                <td>@diagnostico.Fecha</td>
+                <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@diagnostico.Id">Detalle</a></td>
+                <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@diagnostico.Id">Editar</a></td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

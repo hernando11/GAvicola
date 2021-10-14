@@ -32,6 +32,9 @@ namespace GAvicola.App.Frontend
             services.AddSingleton<IRepositorioVeterinario, RepositorioVeterinario>(); // 05 Sept 2021
             services.AddSingleton<IRepositorioOperario, RepositorioOperario>(); // 05 Sept 2021
             services.AddSingleton<IRepositorioGAmbiente, RepositorioGAmbiente>(); // 08 Sept 2021
+            services.AddSingleton<IRepositorioSugerencia, RepositorioSugerencia>(); // 13 Sept 2021
+            services.AddSingleton<IRepositorioDiagnostico, RepositorioDiagnostico>(); // 13 Sept 2021
+            //services.AddSingleton<IRepositorioAmbiente, RepositorioAmbiente>(); // 13 Sept 2021
 
             /* Para que funcione el "AddSingleton" de contener,
              En cada uno de los "RepositoriosXXXX.cs" de "Persistencia" deben de ir estass 4 lineas.  - Fecha 06 Sept 2021

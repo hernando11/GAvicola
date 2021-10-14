@@ -2,3 +2,72 @@
 @model GAvicola.App.Frontend.Pages.Sugerencias.Details1Model
 @{
 }
+<h1>Detalle Sugerencias</h1>
+<table class="table table-stried">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.sugerencia.Id</td>
+    </tr>
+    <tr>
+        <th scope="col">Descripcion Sugerencia</th>
+        <td>@Model.sugerencia.Descripcion</td>
+    </tr>
+    <tr>
+        <th scope="col">Fecha Sugerencia</th>
+        <td>@Model.sugerencia.Fecha</td>
+    </tr>
+    
+    <!--
+        Se quito el simbolo ARROBA anes de "Model"
+    <tr>
+        <th scope="col">Veterinario Id</th>
+        <td>Model.galpon.Veterinario</td>
+    </tr>
+    <tr>
+        <th scope="col">Operario Id</th>
+        <td>Model.galpon.Operario</td>
+    </tr>
+    <tr>
+-->
+
+    <!-- Falta antes de hacer esto, buscar si existe el
+    -->
+    
+        <th scope="col">Galpon</th>
+        @if (Model.sugerencia.Galpon == null)
+        {
+            <th> 
+                <a class= "btn btn-secondary" asp-page="./AddGalpones" asp-route-id="@Model.sugerencia.Id">Asignar Galpon 2</a>
+            </th>
+            <!--
+            <th>Nombre</th>
+            <td>Model.galpon.Veterinario</td>
+            -->
+        }
+        else
+        {
+            <!-- Quite el ARROBA anes de "Model"-->
+            <td>@Model.sugerencia.Galpon.Nombre</td>
+        }
+    </tr>
+    <tr>
+
+        <th scope="col">Veterinario</th>
+        @if (Model.sugerencia.Veterinario == null)
+        {
+             <th>              
+                <a class= "btn btn-secondary" asp-page="./AddVeterinario" asp-route-id="@Model.sugerencia.Id">Asignar Veterinario 2</a>
+            </th>
+        }
+        else
+        {
+            <!-- Quite el ARROBA anes de "Model"-->
+            <td>@Model.sugerencia.Veterinario.Nombre</td>
+        }
+
+
+    </tr>
+    
+
+</table>
+<a class="btn btn-secondary" asp-page="./index1">Volver</a>

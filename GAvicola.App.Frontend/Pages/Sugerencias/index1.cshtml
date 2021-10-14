@@ -1,4 +1,30 @@
 ﻿@page
-@model GAvicola.App.Frontend.Pages.index1Model
+@model GAvicola.App.Frontend.Pages.Sugerencias.index1Model
 @{
 }
+<h1>Listado Sugerencias</h1>
+<a class="btn btn-primary" asp-page="./Create1">Crear Sugerencias</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Sugerencia</th>
+            <th scope="col">Fecha Sugerencia</th>
+
+            <th colspan="2" scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var sugerencia in Model.sugerencias)
+        {
+            <tr>
+                <td>@sugerencia.Descripcion</td>
+                <td>@sugerencia.Fecha</td>
+                <td><a class="btn btn-secondary" asp-page="./Details1" asp-route-id="@sugerencia.Id">Detalle</a></td>
+                <td><a class="btn btn-secondary" asp-page="./Edit1" asp-route-id="@sugerencia.Id">Editar</a></td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
