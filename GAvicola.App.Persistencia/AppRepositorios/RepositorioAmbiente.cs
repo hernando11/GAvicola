@@ -121,6 +121,24 @@ namespace GAvicola.App.Persistencia
             // Yo colo que sto para solucionar un error 06 Sept 2021
             return null;
         }
+
+        Galpon IRepositorioGAmbiente.AsignarGalpon(int IdAmbiente, int IdGalpon)
+        {
+            var gambienteEncontrado = _appContext.GAmbientes.Find(IdAmbiente);
+            if ( gambienteEncontrado != null)
+            {
+                var galponEncontrado = _appContext.Galpones.Find(IdGalpon);
+                if ( galponEncontrado != null)
+                {
+                    //galponEncontrado.VeterinarioId = veterinarioEncontrado;
+                    gambienteEncontrado.Galpon = galponEncontrado; //IdVeterinario;
+                    _appContext.SaveChanges();
+                }
+                return galponEncontrado;
+            }
+            // Yo colo que sto para solucionar un error 06 Sept 2021
+            return null;
+        }
         
         
 

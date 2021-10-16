@@ -11,8 +11,28 @@ namespace GAvicola.App.Frontend.Pages.Diagnosticos
 {
     public class Details1Model : PageModel
     {
-        public void OnGet()
+        private readonly IRepositorioDiagnostico _repoDiagnostico;
+
+        public Diagnostico diagnostico { get; set; }
+
+        public Details1Model(IRepositorioDiagnostico repoDiagnostico)
         {
+            _repoDiagnostico=repoDiagnostico;
+        }
+
+
+        public IActionResult OnGet(int id)
+        {
+            diagnostico = _repoDiagnostico.GetDiagnostico(id);
+            if (diagnostico == null)
+            {
+                return NotFound();
+            }else
+            {
+                return Page();
+            }
         }
     }
 }
+
+

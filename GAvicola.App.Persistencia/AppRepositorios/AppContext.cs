@@ -25,10 +25,15 @@ namespace GAvicola.App.Persistencia
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder
+            
             //.UseSQLServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =GAvicolaData");
+            
+            // Fecha 15 Octubre 2021 - Comentariado para conectarse a la NUBE de AZURE
+            // Es decir, no se hara conexion LOCAL a la Base de Datso
+            //optionsBuilder
+            //.UseSqlServer("Initial Catalog=GAvicoladata; Data Source=DESKTOP-R4IP09K; Integrated Security=true");
 
-            .UseSqlServer("Initial Catalog=GAvicoladata; Data Source=DESKTOP-R4IP09K; Integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=tcp:gavicola.database.windows.net,1433;Database=GAvicoladata;User ID=GAvicola;Password=Nosfera11;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         }
     }
