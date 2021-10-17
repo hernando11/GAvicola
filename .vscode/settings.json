@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/77fd96b0-8456-4f23-97e3-de52d610b2aa/resourceGroups/GAvicola/providers/Microsoft.Web/sites/GAvicola",
+    "appService.defaultWebAppToDeploy": "/subscriptions/77fd96b0-8456-4f23-97e3-de52d610b2aa/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/GAvicola1",
     "appService.deploySubpath": "GAvicola.App.Frontend\\publish"
 }

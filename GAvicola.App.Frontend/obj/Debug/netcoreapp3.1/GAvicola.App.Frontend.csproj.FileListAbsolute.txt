@@ -109,10 +109,8 @@ C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\a
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\appsettings.json
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\GAvicola.App.Frontend.deps.json
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\GAvicola.App.Frontend.runtimeconfig.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\web.config
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\appsettings.Development.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\appsettings.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\GAvicola.App.Frontend.deps.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\GAvicola.App.Frontend.runtimeconfig.json
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ambientes\Edit1.cshtml.g.cs
+C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sugerencias\Edit1.cshtml.g.cs
+C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Diagnosticos\Edit1.cshtml.g.cs

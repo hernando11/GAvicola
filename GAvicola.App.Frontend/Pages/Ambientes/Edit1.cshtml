@@ -1,0 +1,50 @@
+﻿@page
+@using GAvicola.App.Dominio
+@model GAvicola.App.Frontend.Pages.Ambientes.Edit1Model
+@{
+}
+<h1>Editar Ambientes</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="gambiente.Id"></label>
+        <input asp-for="gambiente.Id" class="form-control" readonly>
+        <span asp-validation-for="gambiente.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gambiente.Temperatura">Temperatura °C</label>
+        <input asp-for="gambiente.Temperatura" class="form-control">
+        <span asp-validation-for="gambiente.Temperatura" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gambiente.Agua">Agua - Litros</label>
+        <input asp-for="gambiente.Agua" class="form-control">
+        <span asp-validation-for="gambiente.Agua" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gambiente.Alimento">Alimento - Kg</label>
+        <input asp-for="gambiente.Alimento" class="form-control">
+        <span asp-validation-for="gambiente.Alimento" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gambiente.Huevos"></label>
+        <input asp-for="gambiente.Huevos" class="form-control">
+        <span asp-validation-for="gambiente.Huevos" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gambiente.Enfermas">Animales enfermos</label>
+        <input asp-for="gambiente.Enfermas" class="form-control">
+        <span asp-validation-for="gambiente.Enfermas" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="gambiente.Fecha">Fecha</label>
+        <input asp-for="gambiente.Fecha" class="form-control">
+        <span asp-validation-for="gambiente.Fecha" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Modificar Variables</button>
+
+
+
+</form>
+<A class="btn btn-secondary" asp-page="./index1">Volver</a>

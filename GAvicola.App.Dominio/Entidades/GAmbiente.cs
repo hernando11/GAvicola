@@ -1,5 +1,6 @@
 using System;
 //using System.ComponentModel.DataAnnotations; //Para generar otra PK
+using System.ComponentModel.DataAnnotations;
 
 namespace GAvicola.App.Dominio
 {
@@ -23,6 +24,8 @@ namespace GAvicola.App.Dominio
         public double Alimento {get;set;}
         public int Huevos {get;set;}
         public int Enfermas{get;set;}
+        [Display (Name="Fecha de la medicion")]
+        [Range(typeof(DateTime), "1/1/2021", "1/2/2099", ErrorMessage = "El valor de {0} debe estar entre {1} y {2}")]
         public DateTime Fecha {get;set;}
         public int Activo {get;set;}
     }

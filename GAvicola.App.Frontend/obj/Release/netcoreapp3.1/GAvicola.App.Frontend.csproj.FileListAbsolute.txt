@@ -104,15 +104,5 @@ C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Release\netcoreapp3.1\staticw
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Release\netcoreapp3.1\GAvicola.App.Frontend.dll
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Release\netcoreapp3.1\GAvicola.App.Frontend.pdb
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\obj\Release\netcoreapp3.1\GAvicola.App.Frontend.genruntimeconfig.cache
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\web.config
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\appsettings.Development.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\appsettings.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\GAvicola.App.Frontend.deps.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\GAvicola.App.Frontend.runtimeconfig.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\publish\web.config
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\publish\appsettings.Development.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\publish\appsettings.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\publish\GAvicola.App.Frontend.deps.json
-C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\publish\publish\GAvicola.App.Frontend.runtimeconfig.json
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\Humanizer.dll
 C:\GAvicola\GAvicola.App\GAvicola.App.Frontend\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
