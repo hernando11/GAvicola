@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
 using GAvicola.App.Dominio;
 using GAvicola.App.Persistencia;
 
@@ -13,11 +14,15 @@ namespace GAvicola.App.Frontend.Pages.Galpones
     {   
         
         private readonly IRepositorioGalpon _repoGalpon;
+        // Fecha 17 Octtubre 2021 - Login
+        private readonly ILogger<index1Model> _logger;
 
         public IEnumerable<Galpon> galpones { get; set; }
 
-        public index1Model(IRepositorioGalpon repoGalpon)
+        // Fecha 17 Octtubre 2021 - Login
+        public index1Model(ILogger<index1Model> logger ,IRepositorioGalpon repoGalpon)
         {
+            _logger = logger;
             _repoGalpon=repoGalpon;
         }
 

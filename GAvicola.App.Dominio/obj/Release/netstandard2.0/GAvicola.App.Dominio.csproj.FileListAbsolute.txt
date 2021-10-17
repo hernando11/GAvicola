@@ -1,0 +1,9 @@
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\bin\Release\netstandard2.0\GAvicola.App.Dominio.deps.json
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\bin\Release\netstandard2.0\GAvicola.App.Dominio.dll
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\bin\Release\netstandard2.0\GAvicola.App.Dominio.pdb
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\obj\Release\netstandard2.0\GAvicola.App.Dominio.csprojAssemblyReference.cache
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\obj\Release\netstandard2.0\GAvicola.App.Dominio.AssemblyInfoInputs.cache
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\obj\Release\netstandard2.0\GAvicola.App.Dominio.AssemblyInfo.cs
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\obj\Release\netstandard2.0\GAvicola.App.Dominio.csproj.CoreCompileInputs.cache
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\obj\Release\netstandard2.0\GAvicola.App.Dominio.dll
+C:\GAvicola\GAvicola.App\GAvicola.App.Dominio\obj\Release\netstandard2.0\GAvicola.App.Dominio.pdb
